@@ -1,0 +1,46 @@
+/* GENERALI */
+:root{
+    --main-blue: #2c3e50;
+    --light-blue: #3a546d;
+    --main-green: #1abc9c;
+}
+.container{
+    margin: 0 auto;
+}
+
+
+
+.box{
+    background-color: pink;
+    padding: 0.5rem;
+}
+
+
+
+/* HEADER */
+header{
+    height: 50px;
+    background-color: var(--main-blue);
+    color: white;
+}
+
+/* MAIN */
+main > section, footer > section{
+    padding: 2rem 0;
+}
+#jumbo{
+    background-color: var(--main-green);
+    height: 300px;
+} 
+#about{
+    background-color: var(--main-green);
+}
+
+/* FOOTER */
+#info{
+    background-color: var(--light-blue);
+}
+#copyright{
+    background-color: var(--main-blue);
+    padding: 0.3rem 0;
+}
