@@ -7,14 +7,24 @@
 .container{
     margin: 0 auto;
 }
-
-
-
-.box{
-    background-color: pink;
-    padding: 0.5rem;
+a{
+    text-decoration: none;
 }
-
+a:hover{
+    color: var(--main-green);
+}
+ul{
+    list-style-type: none;
+}
+.icone i{
+    font-size: 2rem;
+}
+.icone .dash{
+    background-color: var(--main-blue);
+    width: 150px;
+    height: 3px;
+    border-radius: 10px;
+}
 
 
 /* HEADER */
@@ -26,24 +36,142 @@ header{
     top: 0;
     z-index: 30;
 }
+header ul{
+    height: 100%;
+}
+header a{
+    color: white;
+    font-weight: bold;
+}
+.hamburger{
+    display: none;
+}
 
 /* MAIN */
 main > section, footer > section{
     padding: 2rem 0;
 }
+
+/* Jumbo */
 #jumbo{
     background-color: var(--main-green);
-    height: 300px;
-} 
+    text-align: center;
+    color: white;
+}
+#jumbo img{
+    width: 50%;
+    display: block;
+}
+h1{
+    font-weight: bold;
+}
+#jumbo .icone .dash{
+    background-color: white;
+}
+
+/* Portfolio */
+#portfolio{
+    color: var(--main-blue);
+}
+h2{
+    text-align: center;
+}
+.portfolio-works div > *{
+    border-radius: 1rem;
+}
+.portfolio-works .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-green);
+    opacity: 40%;
+    display: none;
+}
+.portfolio-works div:hover .overlay{
+    display: block;
+}
+.portfolio-works img{
+    width: 100%;
+}
+
+/* About */
 #about{
+    background-color: var(--main-green);
+    color: white;
+}
+#about .icone .dash{
+    background-color: white;
+}
+#about .button{
+    border: 2px solid white;
+}
+.button{
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Contact */
+#contact input, #contact textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+#contact input{
+    height: 50px;
+}
+#contact ::placeholder{
+    color: var(--light-blue);
+    font-weight: bold;
+}
+#contact .button{
     background-color: var(--main-green);
 }
 
 /* FOOTER */
+footer{
+    color: white;
+    text-align: center;
+}
 #info{
     background-color: var(--light-blue);
+}
+.main-green{
+    color: var(--main-green);
+}
+.social-icons{
+    width: 50%;
+}
+.social-icons i{
+    font-size: 25px;
 }
 #copyright{
     background-color: var(--main-blue);
     padding: 0.3rem 0;
+    font-size: 11px;
+}
+
+
+
+/************************
+RESPONSIVE 
+*************************/
+
+
+/* MOBILE */
+@media all and (max-width:767px){
+
+
+    #menu{
+        display: none !important;
+    }
+
+    .hamburger{
+        display: block;
+        text-align: right;
+        font-size: 1.5rem;
+    }
+
+    #info .icons{
+        margin: 40px 0;
+    }
 }

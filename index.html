@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,17 @@
     <title>Bootstrap Freelancer</title>
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
-    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
     <!-- MIO CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+    integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
 
     <!-- INIZIO HEADER -->
@@ -20,11 +26,29 @@
         <div class="row container justify-content-between">
 
             <div class="col-lg-3 col-md-5 col-8">
-                <div class="box">logo</div>
+                <h4 class="pt-2">START BOOTSTRAP</h4>
             </div>
 
-            <div class="col-lg-3 col-2">
-                <div class="box menu">menu</div>
+            <div class="col-lg-3 col-md-5 col-2">
+
+                <ul class="d-flex align-items-center justify-content-between" id="menu">
+                    <a href="#portfolio">
+                        <li>PORTFOLIO</li>
+                    </a>
+
+                    <a href="#about">
+                        <li>ABOUT</li>
+                    </a>
+
+                    <a href="#contact">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+
+                <div class="hamburger p-1">
+                    <i class="bi bi-list"></i>
+                </div>
+
             </div>
 
         </div>
@@ -39,9 +63,20 @@
 
             <div class="row justify-content-center container">
                 <div class="col-lg-6 col-11">
-                    <div class="box">
-                        Start Bootstrap
-                    </div>
+                    
+
+                        <img src="img/avatar.svg" alt="avatar" class="mx-auto">
+
+                        <h1 class="my-2">START BOOTSTRAP</h1>
+
+                        <div class="icone d-flex align-items-center justify-content-center mb-2">
+                            <div class="dash mx-2"></div>
+                            <i class="bi bi-star-fill"></i>
+                            <div class="dash mx-2"></div>
+                        </div>
+
+                        <span>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
+                    
                 </div>
             </div>
 
@@ -52,36 +87,48 @@
 
             <div class="row justify-content-center container">
                 <div class="col-lg-4 col-6">
-                    <div class="box">
-                        PORTFOLIO
+                    
+                    <h2>PORTFOLIO</h2>
+
+                    <div class="icone d-flex align-items-center justify-content-center mb-2">
+                        <div class="dash mx-2"></div>
+                        <i class="bi bi-star-fill"></i>
+                        <div class="dash mx-2"></div>
                     </div>
+                    
                 </div>
             </div>
 
-            <div class="row justify-content-center container gy-3">
+            <div class="portfolio-works row justify-content-between container gy-3">
 
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="box">immagine</div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="overlay position-absolute"></div>
+                    <img src="img/cabin.png" alt="cabin">
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="box">immagine</div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="overlay position-absolute"></div>
+                    <img src="img/cake.png" alt="cake">
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="box">immagine</div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="overlay position-absolute"></div>
+                    <img src="img/circus.png" alt="circus">
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="box">immagine</div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="overlay position-absolute"></div>
+                    <img src="img/game.png" alt="game">
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="box">immagine</div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="overlay position-absolute"></div>
+                    <img src="img/safe.png" alt="safe">
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="box">immagine</div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="overlay position-absolute"></div>
+                    <img src="img/submarine.png" alt="submarine">
                 </div>
 
             </div>
@@ -93,22 +140,49 @@
 
             <div class="row justify-content-center container">
                 <div class="col-lg-4 col-6">
-                    <div class="box">
-                        ABOUT US
+                    
+                    <h2>ABOUT</h2>
+
+                    <div class="icone d-flex align-items-center justify-content-center mb-2">
+                        <div class="dash mx-2"></div>
+                        <i class="bi bi-star-fill"></i>
+                        <div class="dash mx-2"></div>
                     </div>
+
                 </div>
             </div>
 
             <div class="row justify-content-center container gy-3">
 
-                <div class="col-md-6 col-12">
-                    <div class="box">txt</div>
+                <div class="col-md-6 col-12 ps-5">
+                    <p>
+                        Freelancer is a free Bootstrap theme created by Start Bootstrap.
+                        The download includes the complete source files inclufing HTML, CSS and JavaScript
+                        as well as optional LESS stylesheets for easy custumization.
+                    </p>
                 </div>
 
-                <div class="col-md-6 col-12">
-                    <div class="box">txt</div>
+                <div class="col-md-6 col-12 pe-5">
+                    <p>
+                        Whetever you're a student looking to showcase your
+                        work, a professional looking to attract clients, or a graphic artist looking to share projects,
+                        this template is the perfect starting point!
+                    </p>
                 </div>
-            
+
+            </div>
+
+            <div class="row justify-content-center container">
+                <div class="col-lg-2 col-md-3 col-4">
+
+                    <a href="#">
+                        <div class="button d-flex justify-content-center p-2">
+                            <i class="bi bi-download me-1"></i>
+                            Download
+                        </div>
+                    </a>
+
+                </div>
             </div>
 
         </section>
@@ -117,36 +191,48 @@
         <section id="contact">
 
             <div class="row justify-content-center container">
+                
                 <div class="col-lg-4 col-6">
-                    <div class="box">
-                        CONTACT ME
+                    
+                    <h2>CONTACT ME</h2>
+
+                    <div class="icone d-flex align-items-center justify-content-center mb-2">
+                        <div class="dash mx-2"></div>
+                        <i class="bi bi-star-fill"></i>
+                        <div class="dash mx-2"></div>
                     </div>
+                    
                 </div>
+
             </div>
 
             <div class="row justify-content-center container gy-3">
 
                 <div class="col-12">
-                    <div class="box">Name</div>
+                    <input type="text" placeholder="Nome" required>
                 </div>
 
                 <div class="col-12">
-                    <div class="box">Email</div>
+                    <input type="email" placeholder="Email Address" required>
                 </div>
 
                 <div class="col-12">
-                    <div class="box">Phone</div>
+                    <input type="text" placeholder="Phone Number" required>
                 </div>
 
                 <div class="col-12">
-                    <div class="box">Message</div>
+                    <textarea cols="30" rows="10" placeholder="Message"></textarea>
                 </div>
 
             </div>
 
             <div class="row container gy-3">
-                <div class="col-lg-1 col-2">
-                    <div class="box">bottone</div>
+                <div class="col-lg-1 col-md-2 col-3">
+                    <a href="#">
+                        <div class="button p-2">
+                            Send
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -159,18 +245,41 @@
     <footer>
 
         <section id="info">
-            <div class="row container justify-content-between">
+            <div class="row container justify-content-between align-items-center">
 
                 <div class="col-md-4 col-12">
-                    <div class="box">testo</div>
+
+                        <p>
+                            <strong>LOCATION</strong><br>
+                            2215 John Daniel Drive Clark,MO <br>
+                            54243
+
+                        </p>
+
+                </div>
+
+                <div class="icons col-md-4 col-12">
+
+                        <p><strong>AROUND THE WEB</strong></p>
+
+                        <div class="social-icons d-flex mx-auto justify-content-between">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-google"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+
                 </div>
 
                 <div class="col-md-4 col-12">
-                    <div class="box">testo</div>
-                </div>
 
-                <div class="col-md-4 col-12">
-                    <div class="box">testo</div>
+                        <p>
+                            <strong>ABOUT FREELANCER</strong><br>
+                            Freelance is a free to use, open source<br>
+                            Bootstrap theme created by <span class="main-green">Start Bootstrap</span>
+
+                        </p>
+
                 </div>
 
             </div>
@@ -179,8 +288,10 @@
         <section id="copyright">
 
             <div class="row container justify-content-center">
-                <div class="col-2">
-                    <div class="box">Copyright</div>
+                <div class="col-md-4 col-12 pt-2">
+                        <p>
+                            Copyright &#169; Your Website 2019
+                        </p>
                 </div>
             </div>
 
@@ -190,6 +301,7 @@
 
     </footer>
     <!-- FINE FOOTER -->
-    
+
 </body>
+
 </html>
